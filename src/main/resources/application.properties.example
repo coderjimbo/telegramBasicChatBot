@@ -1,0 +1,23 @@
+telegram.bot.api.key=5555555555:AAAAAAAAAAA-AAAAAAAAAAAAAAA
+telegram.bot.name=BotUsernameHandle
+
+telegram.venue.pre.text=Hey guys look where i am
+telegram.venue.address=1234 Test St.
+telegram.venue.title=Venue Name
+telegram.venue.latitude=12.345678f
+telegram.venue.longitude=-12.345678f
+
+telegram.trigger.keywords=\
+  code,\
+  java,\
+  spring
+
+telegram.sticker.list=\
+  CAACAgQAAxkBAAID8V8RJcK7r1zUXkdX86lbhDsZcznCAAJUCgAC_vrLAAFo21at4yBlNRoE,
+  CAACAgQAAxkBAAID8l8RJcfumonzFaG2NLpSIAnLur7HAAJWCgAC_vrLAAGpcax-ZZnLsBoE
+
+telegram.response.list=\
+  Hey guys whats up?,\
+  [sticker],\
+  Make sure to like and subscribe,\
+  [venue]

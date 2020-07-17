@@ -8,11 +8,11 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.jameskeith</groupId>
-	<artifactId>zieglerbot</artifactId>
+	<groupId>net.jameskeith.telegram</groupId>
+	<artifactId>basicchatbot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>zieglerbot</name>
-	<description>A Telegram bot simulating my friend Chris</description>
+	<description>A basic Telegram bot that can reply to groups and DMs</description>
 
 	<properties>
 		<java.version>1.8</java.version>

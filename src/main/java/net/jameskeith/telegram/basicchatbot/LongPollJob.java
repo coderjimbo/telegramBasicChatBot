@@ -108,12 +108,20 @@ public class LongPollJob implements Job {
     }
 
     private void handleUpdate(Update update) {
+        //printStickerInUpdate(update); // Use this method to print whenever a sticker is posted to get its id for the property file
+
         if(updateContainsMessageEntities(update)) {
             handleMessageEntities(update); // This method checks for "entities" - mainly @ mentions so the bot can directly respond
         } else if(messageIsDirectToBot(update)) {
             respondToMessage(update); // This method handles DMs to the bot
         } else if (messageContainsTriggerKeyword(update.getMessage())) {
             respondToMessage(update); // This method responds to trigger keywords during normal group conversation
+        }
+    }
+
+    private void printStickerInUpdate(Update update) {
+        if(update.getMessage() != null && update.getMessage().getSticker() != null) {
+            System.out.println("Sticker ID: " + update.getMessage().getSticker().getFile_id());
         }
     }
 
@@ -145,7 +153,7 @@ public class LongPollJob implements Job {
             String text = message.getText().toLowerCase();
 
             List<String> triggerKeywordsList = Arrays.asList(triggerKeywords);
-            return triggerKeywordsList.contains(text);
+            return triggerKeywordsList.parallelStream().anyMatch(text::contains);
         }
         return false;
     }

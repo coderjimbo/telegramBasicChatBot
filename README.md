@@ -1,0 +1,1 @@
+Fill out the application-properties file according to the application.properties.example file. Run a clean install, then execute the bot by running ./mvnw spring-boot:run
