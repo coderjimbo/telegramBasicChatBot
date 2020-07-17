@@ -11,7 +11,7 @@
 	<groupId>net.jameskeith.telegram</groupId>
 	<artifactId>basicchatbot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>zieglerbot</name>
+	<name>basicchatbot</name>
 	<description>A basic Telegram bot that can reply to groups and DMs</description>
 
 	<properties>
